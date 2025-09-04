@@ -14,7 +14,7 @@ hero:
       text: API Examples
       link: /api-examples
     - theme: alt
-      text: etc
+      text: ETC
       link: /etc
 
 features:
