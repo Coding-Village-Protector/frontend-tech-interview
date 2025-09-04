@@ -1,28 +1,22 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "frontend-tech-interview-docs",
-  description: "fronted developer tech interview handbook",
+  base: "/frontend-tech-interview/",
+  title: "FE Tech Interview Handbook",
+  description: "Coding Village Protector",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
+    nav: [{ text: "Home", link: "/" }],
     sidebar: [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+        text: "Conventions",
+        items: [{ text: "기타", link: "/etc" }],
+      },
     ],
-
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      {
+        icon: "github",
+        link: "https://github.com/Coding-Village-Protector/frontend-tech-interview",
+      },
+    ],
+  },
+});
