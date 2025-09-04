@@ -3,8 +3,8 @@
 
 # build output
 /dist
-/.vitepress/cache
-/.vitepress/dist
+docs/.vitepress/cache
+docs/.vitepress/dist
 
 # system files
 .DS_Store
