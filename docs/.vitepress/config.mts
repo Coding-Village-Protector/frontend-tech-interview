@@ -2,14 +2,24 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   base: "/frontend-tech-interview/",
-  title: "FE Tech Interview Handbook",
-  description: "Coding Village Protector",
+  title: "FE Tech Interview Guide",
+  description: "Coding Village Protector Study",
+  head: [
+    ["link", { rel: "icon", href: "/frontend-tech-interview/favicon.ico" }],
+  ],
   themeConfig: {
     nav: [{ text: "Home", link: "/" }],
     sidebar: [
       {
-        text: "Conventions",
-        items: [{ text: "기타", link: "/etc" }],
+        text: "Chapters",
+        items: [
+          { text: "Javascript", link: "/javascript" },
+          { text: "React", link: "/react" },
+          { text: "Next.js", link: "/next" },
+          { text: "Web", link: "/web" },
+          { text: "Network", link: "/network" },
+          { text: "Data Structure", link: "/data-structure" },
+        ],
       },
     ],
     socialLinks: [
