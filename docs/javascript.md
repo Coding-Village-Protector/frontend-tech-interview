@@ -2,48 +2,28 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# JavaScript
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+이 장에서는 프론트엔드 기술 면접에서 자주 나오는 JavaScript 핵심 개념과 관련 질문들을 정리합니다.
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+## 자바스크립트의 실행 원리와 엔진 구조
 
-```md
-<script setup>
-import { useData } from 'vitepress'
+### Javascript란?
 
-const { theme, page, frontmatter } = useData()
-</script>
+JavaScript는 HTML, CSS와 함께 웹 브라우저에서 실행할 수 있는 프로그래밍 언어입니다. JavaScript는 동적 타입 언어로, 런타임 시 타입이 결정되는 특징이 있습니다. 또한, JavaScript는 컴파일을 거치지 않는 인터프리터 언어입니다. JavaScript 엔진인 V8 엔진이 최적화를 위해 JIT(Just-In-Time) 컴파일러를 사용하지만, 기본적으로 JavaScript는 인터프리터 방식으로 실행됩니다
 
-## Results
+### 꼬리 질문
 
-### Theme Data
-<pre>{{ theme }}</pre>
+- 컴파일러와 인터프리터란 무엇인가요?
+- 자바스크립트 엔진이 코드를 실행하는 과정에 대해 설명해 주세요.
 
-### Page Data
-<pre>{{ page }}</pre>
+## 변수
 
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
+### var 키워드와 let 키워드의 차이점은 무엇인가요?
 
-<script setup>
-import { useData } from 'vitepress'
+`var` 키워드는 함수 스코프를 가지며 호이스팅 시 변수 선언과 초기화가 함께 일어나기 때문에 의도치 않은 값 참조가 발생할 수 있습니다. 반면 `let` 키워드는 블록 스코프를 가지며, 호이스팅은 되지만 초기화는 실행 시점에 이뤄져 `TDZ(Temporal Dead Zone)`이 존재하여 선언 전에 접근하면 에러가 발생합니다. 이러한 차이 때문에 최근에는 `var` 대신 `let`과 `const` 사용이 권장됩니다.
 
-const { site, theme, page, frontmatter } = useData()
-</script>
+### 꼬리질문
 
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+- TDZ란 무엇인가요?
+- const 키워드란 무엇인가요?

@@ -2,48 +2,8 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# 웹(Web)
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+이 장에서는 브라우저와 웹 동작 원리, DOM, 쿠키/세션/스토리지 등 프론트엔드 면접에서 자주 나오는 웹 핵심 개념을 정리합니다.
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
-
-```md
-<script setup>
-import { useData } from 'vitepress'
-
-const { theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+---

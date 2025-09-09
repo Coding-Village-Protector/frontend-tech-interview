@@ -2,48 +2,10 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# Next.js
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+이 장에서는 프론트엔드 면접에서 자주 다뤄지는 Next.js의 핵심 개념과 질문들을 정리합니다.  
+Next.js는 React 기반 풀스택 프레임워크로, 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG), 파일 기반 라우팅 등 React 단독으로는 제공하지 않는 기능들을 지원합니다.  
+실무에서는 SEO 최적화, 초기 로딩 성능 개선, 서버-클라이언트 통합 개발 등에서 널리 사용됩니다.
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
-
-```md
-<script setup>
-import { useData } from 'vitepress'
-
-const { theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+---

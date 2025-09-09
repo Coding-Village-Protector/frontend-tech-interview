@@ -16,16 +16,16 @@ hero:
       text: Next.js
       link: /next
     - theme: alt
-      text: Web
+      text: 웹(Web)
       link: /web
     - theme: alt
-      text: Network
+      text: 네트워크(Network)
       link: /network
     - theme: alt
-      text: Data Structure
+      text: 자료구조 & 알고리즘
       link: /data-structure
     - theme: alt
-      text: Etc
+      text: 기타 FE 지식
       link: /etc
 
 features:
@@ -43,6 +43,6 @@ features:
     details: HTTP, HTTPS, CORS, 캐싱 전략, 쿠키/세션/JWT 등 실무에 필요한 지식을 정리합니다.
   - title: 자료구조 & 알고리즘
     details: 배열, 스택, 큐, 해시맵, 트리, 그래프 및 시간/공간 복잡도를 학습합니다.
-  - title: 기타 학습 주제
+  - title: 기타 FE 지식
     details: 웹팩, 번들링, 테스트 전략, 보안, 최신 프론트엔드 트렌드를 정리합니다.
 ---

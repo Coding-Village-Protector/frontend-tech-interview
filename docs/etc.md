@@ -2,54 +2,6 @@
 outline: deep
 ---
 
-# ETC
+# 기타 프론트엔드 지식
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
-
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
-
-```md
-<script setup>
-import { useData } from 'vitepress'
-
-const { theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-
-<pre>{{ theme }}</pre>
-
-### Page Data
-
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-
-<pre>{{ theme }}</pre>
-
-### Page Data
-
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+이 장에서는 빌드 도구, 성능 최적화, 보안, 브라우저 API, 협업 관련 지식 등 프론트엔드 면접에서 자주 물어보이는 기타 주제들을 정리합니다.

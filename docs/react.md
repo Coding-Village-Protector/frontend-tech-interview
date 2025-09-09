@@ -2,48 +2,8 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# React
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
-
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
-
-```md
-<script setup>
-import { useData } from 'vitepress'
-
-const { theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+이 장에서는 프론트엔드 면접에서 자주 다뤄지는 React의 핵심 개념과 질문들을 정리합니다.  
+리액트는 컴포넌트 기반의 UI 라이브러리로, 선언적 렌더링과 가상 DOM(Virtual DOM)을 통해 효율적인 UI 업데이트를 지원합니다.  
+또한 훅(Hooks), 상태 관리, 렌더링 최적화 등 면접에서 자주 질문되는 주제를 중심으로 정리합니다.
